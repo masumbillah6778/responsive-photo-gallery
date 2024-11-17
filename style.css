@@ -1,3 +1,7 @@
+body {
+  background: gray;
+}
+
 .layout-conteniner {
   width: min(1600px, 100%);
   margin: 0 auto;
