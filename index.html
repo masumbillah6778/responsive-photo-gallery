@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Family Image Gallery </title>
     <!-- Style CSS -->
-     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./stylevip.css">
   </head>
   
   <body>
@@ -22,28 +23,51 @@
     <label class="tag tag2" for="tania"> তানিয়া </label>
     <label class="tag tag3" for="tanvir"> তানভীর </label>
     <label class="tag tag4" for="others"> অন্যান্য </label>
-    <br>
+    <br /><br />
 
     <div class="images">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/masum.jpg" class="masum">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/my-marriag-day.jpg" class="tania">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/tanvir-birthday.jpg" class="tanvir">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/abba-amma.jpg" class="others">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/masum.jpg" class="masum" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/my-marriag-day.jpg" class="tania" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/tanvir-birthday.jpg" class="tanvir" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/abba-amma.jpg" class="others" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
     
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="birds">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="birds">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/diya-birthday.jpg" class="others">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/raj-birthday.jpg" alt="img" class="others">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="birds" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="birds" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/diya-birthday.jpg" class="others" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/raj-birthday.jpg" alt="img" class="others" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
     
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="fish">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="fish">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="fish">
-      <img width="300px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="birds">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="fish">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="fish">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="fish">
+      <img width="200px" src="https://github.com/masumbillah6778/family-photo-album/raw/main/" class="birds">
     </div>
+
+
+
+
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%">
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
   </body>
 </html>
                   
               
   
   
-
+  
+  
+  
+  
