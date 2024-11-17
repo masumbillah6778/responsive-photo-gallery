@@ -1,75 +1,76 @@
+/* RESET RULES –––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+    background: ; 
+    width: ;
+    height: ;
+    box-sizing: border-box;
+}
+  
 body {
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-  background-image: url('res/drawable/images/bg.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: rgb(0,0,0,0.5);
-  background-blend-mode: overlay;
+    background-image: url('https://github.com/masumbillah6778/responsive-photo-gallery/raw/main/res/drawable/images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(0,0,0,0.5);
+    background-blend-mode: overlay;
+    margin: 0px 0px;
+    padding: 0;
+    font-family: arial;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.conteniner {
+h1 {
+    background: red;
+    color: yellow;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+  }
+          
+  input {
+    display: none;
+  }
   
-}
-
-.conteniner h1 {
-  background: red;
-  color: yellow;
-  margin: 20px auto;
-  padding: 10px;
-  text-align: center;
-}
-
-input{
-  display: none;
-}
-
-.tag{
-  font-size: 20px;
-  margin: 1.5em 0px;
-  padding: 5px 25px;
-  border-radius: 50px;
-  display: inline-block;
-  cursor: pointer;
-  background: #efefef;
-  text-decoration: none;
-  color: black;
-  border: 1px solid #ccc;
-}
-
-.layout-conteniner {
-  width: min(1600px, 100%);
-  margin: 0 auto;
-  columns: 5 300px;
-  column-gap: 1em;
-}
+  .tag {
+    background: green;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid red;
+  }
   
-.layout-conteniner img {
-  width: 100%;
-  margin-bottom: 1em;
-  display: block;
-  transition: all .4s ease-in-out;
-  border: 2px solid white;
-}
+  img {
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
+    transition: all .4s ease-in-out;
+    border: 2px solid white;
+  }
 
-/*filter CSS */
-#masum:checked ~ .images > img:not([class*='masum']),
-#tania:checked ~ .images > img:not([class*='tania']),
-#tanvir:checked ~ .images > img:not([class*='tanvir']),
-#others:checked ~ .images > img:not([class*='others']) {
-  width: 0px;
-  height: 0px;
-}
+  img::before {
+    border: none;
+  }
   
-#all:checked ~ .all,
-#masum:checked ~ .tag1,
-#tania:checked ~ .tag2,
-#tania:checked ~ .tag3,
-#others:checked ~ .tag4 {
-  background-color: #333333;
-  color: white;
-} 
-
-
-
+  /*filter CSS */
+  #masum:checked ~ .images > img:not([class*='masum']),
+  #tania:checked ~ .images > img:not([class*='tania']),
+  #tanvir:checked ~ .images > img:not([class*='tanvir']),
+  #others:checked ~ .images > img:not([class*='others']) {
+    width: 0px;
+    height: 0px;
+  }
+    
+  #all:checked ~ .all,
+  #masum:checked ~ .tag1,
+  #tania:checked ~ .tag2,
+  #tanvir:checked ~ .tag3,
+  #others:checked ~ .tag4 {
+    background-color: red;
+    color: white;
+    border: 2px solid green;
+  } 
