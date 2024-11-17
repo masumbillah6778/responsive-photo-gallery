@@ -27,11 +27,18 @@ h1 {
     text-align: center;
   }
           
-  input {
+input {
     display: none;
   }
+
+label {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 1;
+}
   
-  .tag {
+.tag {
     background: green;
     color: white;
     font-size: 20px;
