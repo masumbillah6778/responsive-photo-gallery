@@ -1,27 +1,12 @@
-.content {
-    width: 50px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: pace-between;
-    justify-content: pace-around;
-    justify-content: pace-evenly;
-    align-items: center;
-    flex-wrap: wra;
-    gap: 10px;
+.layout-conteniner {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  columns: 3 300px;
+  column-gap: 1em;
 }
-          
-.items {
-    background: red;
-    color: white;
-    width: 50px;
-    height: 50px;
-    margin:5px;
-    padding: 10px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    flex-grow: 1;
-    flex-shrink: 0;
+  
+.layout-conteniner img {
+  width: 100%;
+  margin-bottom: 1em;
+  display: block;
 }
