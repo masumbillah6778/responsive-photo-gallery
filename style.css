@@ -54,17 +54,19 @@ input{
 }
 
 /*filter CSS */
-#fish:checked ~ .images > img:not([class*='fish']),
-#birds:checked ~ .images > img:not([class*='birds']),
-#lion:checked ~ .images > img:not([class*='lion']) {
+#masum:checked ~ .images > img:not([class*='masum']),
+#tania:checked ~ .images > img:not([class*='tania']),
+#tanvir:checked ~ .images > img:not([class*='tanvir']),
+#others:checked ~ .images > img:not([class*='others']) {
   width: 0px;
   height: 0px;
 }
   
 #all:checked ~ .all,
-#fish:checked ~ .tag1,
-#birds:checked ~ .tag2,
-#lion:checked ~ .tag3 {
+#masum:checked ~ .tag1,
+#tania:checked ~ .tag2,
+#tania:checked ~ .tag3,
+#others:checked ~ .tag4 {
   background-color: #333333;
   color: white;
 } 
