@@ -17,7 +17,8 @@ body {
   background: red;
   color: yellow;
   margin: 20px auto;
-  padding: 0 auto;
+  padding: 10px auto;
+  text-aligen: center;
 }
 
 .layout-conteniner {
@@ -33,3 +34,8 @@ body {
   display: block;
   border: 2px solid white;
 }
+
+
+
+
+
