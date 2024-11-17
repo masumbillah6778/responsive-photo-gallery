@@ -46,7 +46,7 @@ h1 {
 
 
 .images {
-    width: min(1000px, 100%);
+    width: min(1600px, 100%);
     margin: 0 auto;
     columns: 6 200px;
     column-gap: 1em;
