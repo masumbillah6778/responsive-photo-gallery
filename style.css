@@ -21,6 +21,23 @@ body {
   text-align: center;
 }
 
+input{
+  display: none;
+}
+
+.tag{
+  font-size: 20px;
+  margin: 1.5em 0px;
+  padding: 5px 25px;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  background: #efefef;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ccc;
+}
+
 .layout-conteniner {
   width: min(1600px, 100%);
   margin: 0 auto;
@@ -32,10 +49,25 @@ body {
   width: 100%;
   margin-bottom: 1em;
   display: block;
+  transition: all .4s ease-in-out;
   border: 2px solid white;
 }
 
-
+/*filter CSS */
+#fish:checked ~ .images > img:not([class*='fish']),
+#birds:checked ~ .images > img:not([class*='birds']),
+#lion:checked ~ .images > img:not([class*='lion']) {
+  width: 0px;
+  height: 0px;
+}
+  
+#all:checked ~ .all,
+#fish:checked ~ .tag1,
+#birds:checked ~ .tag2,
+#lion:checked ~ .tag3 {
+  background-color: #333333;
+  color: white;
+} 
 
 
 
