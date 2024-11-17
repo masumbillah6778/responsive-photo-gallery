@@ -1,5 +1,12 @@
 body {
-  background: gray;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzoJaEp6oOE1ksfdS-zuN4CfNzXbmimV1g9MYeWUijlbJ4Yr6DIg1ZPfgwjp8T9x0fhQea6DcztSori81iSEpVRh4DHPBYIfvIuBr7wH9kL22Su6hGufO_Joihkn9bweOPX7uLWCfeaiLqt3uBEQWhYSoGu5I5VJKBYXOANTV9Bw-bLiqgmTrp1o62/s1600/bgimage.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(0,0,0,0.5);
+  background-blend-mode: overlay;
 }
 
 .conteniner {
