@@ -13,6 +13,13 @@ body {
   
 }
 
+.conteniner h1 {
+  background: red;
+  color: yellow;
+  margin: 20px auto;
+  padding: 0 auto;
+}
+
 .layout-conteniner {
   width: min(1600px, 100%);
   margin: 0 auto;
