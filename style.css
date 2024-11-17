@@ -5,7 +5,7 @@
     height: ;
     box-sizing: border-box;
 }
-  
+
 body {
     background-image: url('https://github.com/masumbillah6778/responsive-photo-gallery/raw/main/res/drawable/images/bg.jpg');
     background-size: cover;
@@ -46,7 +46,7 @@ h1 {
 
 
 .images {
-    width: min(1600px, 100%);
+    width: min(1000px, 100%);
     margin: 0 auto;
     columns: 6 200px;
     column-gap: 1em;
