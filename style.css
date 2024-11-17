@@ -43,18 +43,79 @@ h1 {
     text-decoration: none;
     border: 2px solid red;
   }
+
+
+.images {
+    width: min(1600px, 100%);
+    margin: 0 auto;
+    columns: 6 200px;
+    column-gap: 1em;
+  }
   
   img {
-    max-width: 300px;
-    width: 300px;
-    height: 300px;
+    /*max-width: 300px;*/
+    width: 100%;
+    margin-bottom: 1em;
+    display: block;
+    filter: grayscale(100%);
     transition: all .4s ease-in-out;
+    box-shadow: 0 1px 4px 0 rgba(60, 64, 67, .3);
     border: 2px solid white;
   }
 
-  img::before {
+  img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
     border: none;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .header .lead {
+    max-width: 620px;
+  }
+  
+  /** Below CSS is completely optional **/
+  
+  .gallery-container > a {
+    max-width: 200px;
+    max-height: 150px;
+    padding: 5px;
+    disply: inline-block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   /*filter CSS */
   #masum:checked ~ .images > img:not([class*='masum']),
